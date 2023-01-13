@@ -4,8 +4,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 function Mife () {
-  // need a date picker here 
-  // const [startDate, setStartDate] = useState(new Date());
   const [date, setDate] = useState(new Date());
   // const [startRange, setStartRange] = useState('')
   // const [endRange, setEndRange] = useState('')
@@ -38,7 +36,6 @@ console.log(end);
   showTimeSelect
   dateFormat="Pp"/>
   <p>based on your input, you may take the misoprostol between:</p>
-  {/* <p>{startDate}</p> */}
   <div>Selected start date={date ? date.toString() : null}</div>
   {/* <p>start:{start}</p> */}
   {/* <p>end: {end}</p> */}
