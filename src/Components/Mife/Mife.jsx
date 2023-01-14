@@ -43,6 +43,11 @@ function Mife () {
       click here to continue
       </button>
   </Link>
+  <Link to="/pilldescription">
+      <button type="button">
+      back
+      </button>
+  </Link>
   </>
   )
 }

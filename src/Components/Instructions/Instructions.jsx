@@ -7,7 +7,12 @@ function Instructions () {
       <button type="button">
       click here to continue
       </button>
-  </Link>
+    </Link>
+    <Link to="/mife">
+      <button type="button">
+      back
+      </button>
+    </Link>
   </>
   )
 }

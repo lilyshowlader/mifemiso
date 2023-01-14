@@ -1,6 +1,15 @@
+import { Link } from "react-router-dom"
+
 function OkayNotOkay () {
   return (
-    <>what's normal?</>
+    <>
+    <p>what's normal?</p>
+    <Link to="/instructions">
+      <button type="button">
+      back
+      </button>
+    </Link>
+    </>
   )
 }
 
