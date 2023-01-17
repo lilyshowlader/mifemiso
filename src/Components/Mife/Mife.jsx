@@ -5,33 +5,29 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 function Mife () {
+  const initialDate = (new Date())
   const [date, setDate] = useState(new Date());
   const [nextDate, setNextDate] = useState(new Date())
 
-  function addTwentyFourHours(date, hours) {
-    date.setHours(date.getHours() + hours);
-
-    return date;
-  }
-  const end = addTwentyFourHours(date, 24);
-  console.log(end)
-  
-
-  function addEightHours(date, hours) {
+  function addEightHours(initialDate, hours) {
     nextDate.setHours(nextDate.getHours() + hours);
-
     return nextDate;
   }
   const start = addEightHours(nextDate, 8);
-  console.log(start);
+
+  function addTwentyFourHours(initialDate, hours) {
+    date.setHours(date.getHours() + hours)
+    return date;
+  }
+  const end = addTwentyFourHours(date, 24);
 
   return (
   <>
   <p>what time do you plan on taking mifepristone?</p>
   <p>(the first pill)</p>
   <DatePicker 
-  selected={date}
-  onChange={(date) =>{setDate(date); setNextDate(date)}}
+  selected={initialDate}
+  onChange={(initialDate) =>{setNextDate(initialDate); setDate(initialDate)}}
   showTimeSelect
   dateFormat="Pp"/>
   <p>based on your input, you may take the misoprostol between:</p>

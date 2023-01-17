@@ -3,13 +3,15 @@ import { Link } from "react-router-dom"
 function Landing () {
   return (
     <>
-    <p>mifemiso</p>
-    <p>we'll walk you through</p>
+    <div className='landing-container'>
+    <div className='logo'>mifemiso</div>
+    <div>we'll walk you through.</div>
     <Link to="/pilldescription">
       <button type="button">
-      click here to continue
+      click 
       </button>
     </Link>
+    </div>
     </>
   )
 }
