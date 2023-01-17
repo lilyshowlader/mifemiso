@@ -1,25 +1,26 @@
-
-
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 function Mife () {
-  const initialDate = (new Date())
-  const [date, setDate] = useState(new Date());
-  const [nextDate, setNextDate] = useState(new Date())
+  const initialDate = new Date()
+  const [twentyFourHours, setTwentyFourHours] = useState(new Date());
+  const [eightHours, setEightHours] = useState(new Date())
 
+
+  // function below to add eight hours to initialDate
   function addEightHours(initialDate, hours) {
-    nextDate.setHours(nextDate.getHours() + hours);
-    return nextDate;
+    eightHours.setHours(eightHours.getHours() + hours);
+    return eightHours;
   }
-  const start = addEightHours(nextDate, 8);
+  const start = addEightHours(eightHours, 8);
 
+  // function below to add twenty four hours to initialDate
   function addTwentyFourHours(initialDate, hours) {
-    date.setHours(date.getHours() + hours)
-    return date;
+    twentyFourHours.setHours(twentyFourHours.getHours() + hours)
+    return twentyFourHours;
   }
-  const end = addTwentyFourHours(date, 24);
+  const end = addTwentyFourHours(twentyFourHours, 24);
 
   return (
   <>
@@ -27,7 +28,7 @@ function Mife () {
   <p>(the first pill)</p>
   <DatePicker 
   selected={initialDate}
-  onChange={(initialDate) =>{setNextDate(initialDate); setDate(initialDate)}}
+  onChange={(initialDate) =>{setEightHours(initialDate); setTwentyFourHours(initialDate)}}
   showTimeSelect
   dateFormat="Pp"/>
   <p>based on your input, you may take the misoprostol between:</p>
@@ -49,3 +50,4 @@ function Mife () {
 }
  
 export default Mife                     
+
