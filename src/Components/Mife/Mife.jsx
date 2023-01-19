@@ -39,6 +39,7 @@ function Mife() {
 
   return (
     <>
+      <div className='mife-container'>
       <p>step one</p>
       <p>what time do you plan on taking mifepristone?</p>
       <p>(the first pill)</p>
@@ -81,8 +82,8 @@ function Mife() {
       <Link to="/pilldescription">
         <button type="button">back</button> 
         </Link>
-      
-        </>
+      </div> 
+    </>
   );
 }
 

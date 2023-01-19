@@ -2,7 +2,9 @@ import { Link } from "react-router-dom"
 function PillDescription () {
   return (
     <>
-    <p>here is a list of all the medications that were given to you</p>
+    <div className='pilldescription-container'>
+  
+    <p>here is a list of all the medications that were given to you</p> 
     <p>mifepristone</p>
     <p>mifepristone is the first pill you will take during this process. mifepristone works by stopping the supply of hormones that maintains the interior of the uterus. without these hormones, the uterus cannot support the pregnancy and the contents of the uterus are expelled.</p>
     <p>misoprostol</p>
@@ -18,6 +20,7 @@ function PillDescription () {
       click here to continue
       </button>
     </Link>
+    </div>
     </>
   )
 }

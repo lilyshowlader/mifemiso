@@ -1,10 +1,7 @@
-
-
 body {
   font-family: 'Nanum Myeongjo', serif;
   height: 40vmin;
 }
-
 
 .logo {
   font-size: 7rem;
@@ -12,5 +9,17 @@ body {
 
 .landing-container {
   height: 100%;
+  text-align: center;
+}
+
+.pilldescription-container {
+  text-align: center;
+}
+
+.mife-container {
+  text-align: center;
+}
+
+.instructions-container {
   text-align: center;
 }
