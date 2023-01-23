@@ -9,6 +9,7 @@ img {
 
 input {
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* button */
@@ -63,7 +64,7 @@ button {
 .pilldescription-container {
   text-align: center;
   margin: auto;
-  width: 380px;
+  width: 500px;
 }
 
 .pill-title {
@@ -90,7 +91,7 @@ button {
 .mife-container {
   text-align: center;
   margin: auto;
-  width: 380px;
+  width: 500px;
 }
 
 .mife-step-one {
@@ -120,7 +121,7 @@ button {
 .instructions-container {
   text-align: center;
   margin: auto;
-  width: 380px;
+  width: 500px;
 }
 
 .other-steps {
@@ -154,7 +155,7 @@ button {
 .expectations-container {
   text-align: center;
   margin: auto;
-  width: 380px;
+  width: 500px;
 }
 
 .expectations-title {
@@ -167,3 +168,32 @@ button {
 }
 /* expectations page */
 
+
+@media only screen and (max-width: 768px) {
+
+  .landing-container {
+    /* height: 100%; */
+    text-align: center;
+    flex-direction: center;
+    margin-top: 200px;
+  }
+
+  .pilldescription-container {
+    text-align: center;
+    margin: auto;
+    width: 380px;
+  }
+
+  .mife-container {
+    text-align: center;
+    margin: auto;
+    width: 380px;
+  }
+
+  .expectations-container {
+    text-align: center;
+    margin: auto;
+    width: 380px;
+  }
+
+}
