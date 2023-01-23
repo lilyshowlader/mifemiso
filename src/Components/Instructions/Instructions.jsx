@@ -35,7 +35,6 @@ function Instructions () {
   };
 
 
-
   return (
     <>
     <div className='instructions-container'>

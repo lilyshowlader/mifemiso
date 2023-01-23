@@ -3,21 +3,42 @@ body {
   height: 40vmin;
 }
 
+
+/* button */
+button {
+  border-radius: 50%;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+/* landing */
 .logo {
-  font-size: 7rem;
+  font-size: 5.6rem;
+  margin-bottom: 15px;
 }
 
+.logo-sub {
+  margin-bottom: 30px;
+}
+
+.disclaimer {
+  margin-top: 30px;
+}
 .landing-container {
-  height: 100%;
+  /* height: 100%; */
   text-align: center;
+  flex-direction: center;
+  margin-top: 200px;
 }
 
 .pilldescription-container {
   text-align: center;
+
 }
 
 .mife-container {
   text-align: center;
+  
 }
 
 .instructions-container {

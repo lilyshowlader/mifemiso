@@ -8,7 +8,7 @@ function PillDescription () {
     <p>mifepristone</p>
     <p>mifepristone is the first pill you will take during this process. mifepristone works by stopping the supply of hormones that maintains the interior of the uterus. without these hormones, the uterus cannot support the pregnancy and the contents of the uterus are expelled.</p>
     <p>misoprostol</p>
-    <p>misoprostol is what is used to "empty" your uterus. we recommend you take misoprostol either vaginally or buccally. we're gonna explain this, don't worry.</p>
+    <p>misoprostol is what is used to help "empty" your uterus. we recommend you take misoprostol either vaginally or buccally. we're gonna explain this, don't worry.</p>
     <p>compazine</p>
     <p>compazine is used to treat nausea</p>
     <p>ibuprofen</p>
