@@ -3,6 +3,9 @@ body {
   height: 40vmin;
 }
 
+img {
+  border-radius: 50%;
+}
 
 /* button */
 button {
@@ -88,6 +91,7 @@ button {
 
 .time {
   font-size: 20px;
+
 }
 /* mife page */
 
@@ -124,3 +128,22 @@ button {
   margin-bottom: 80px;
 }
 /* instructions page */
+
+
+
+/* expectations page */
+.expectations-container {
+  text-align: center;
+  margin: auto;
+  width: 380px;
+}
+
+.expectations-title {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+}
+/* expectations page */
