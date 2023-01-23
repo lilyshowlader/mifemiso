@@ -16,7 +16,7 @@ function PillDescription () {
     <p className='medication-description'>compazine is used to treat nausea. we recommend for patients to take this medication as a preventative measure.</p>
     <img src="https://i.imgur.com/h83dewV.png" alt='ibuprofen'></img>
     <p className='medication-names'>ibuprofen</p>
-    <p className='medication-description'>ibuprofen is used for pain management.we recommend for patients to take this medication as a preventative measure. </p>
+    <p className='medication-description'>ibuprofen is generic tylenol. it is used for pain management. we recommend for patients to take this medication as a preventative measure. </p>
     <img src="https://i.imgur.com/OUSClVk.png" alt='percocet'></img>
     <p className='medication-names'>percocet</p>
     <p className='medication-description'>percocet is a controlled substance that is also used for pain management. we have given you a perscription for this medication. please pick it up from your pharmacy. we recommend for patients to take this medication as a preventative measure.</p>

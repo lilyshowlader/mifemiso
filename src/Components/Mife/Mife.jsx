@@ -49,7 +49,7 @@ function Mife() {
         showTimeSelect
         dateFormat="Pp"
       />
-      <p>when you take mifepristone, you can take the next set of pills anytime between 6-72 hours later. we suggest that you plan to take the next set of pills at a time where you have no other obligations and can relax.</p>
+      <p>when you take mifepristone, you can take the next set of pills anytime between 6-72 hours later. we suggest that you plan to take the next set of pills at a time when you have no other obligations and can relax.</p>
 
       <p className='mife-input'>based on your input,<br></br> you may take the next set of pills between:</p>
 
