@@ -49,7 +49,9 @@ function Mife() {
         showTimeSelect
         dateFormat="Pp"
       />
-      <p className='mife-input'>based on your input,<br></br> you may take the misoprostol between:</p>
+      <p>when you take mifepristone, you can take the next set of pills anytime between 6-72 hours later. we suggest that you plan to take the next set of pills at a time where you have no other obligations and can relax.</p>
+
+      <p className='mife-input'>based on your input,<br></br> you may take the next set of pills between:</p>
 
       <p className='time'> start:{" "}
         {startDate ? startDate.toLocaleString("en-US", {
@@ -75,7 +77,7 @@ function Mife() {
         hour12: true,
         }) : "please select a date"}
       </p>
-      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p>
+      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p> 
       <Link to="/instructions">
         <button type="button">continue</button>
       </Link>

@@ -8,8 +8,10 @@ body {
 button {
   border-radius: 50%;
   padding: 20px;
-  background: black;
+  background: #2a9d8f;
   color: white;
+  border-color: #2a9d8f;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* landing */
@@ -25,6 +27,7 @@ button {
 .disclaimer {
   margin-top: 30px;
 }
+
 .landing-container {
   /* height: 100%; */
   text-align: center;
@@ -32,6 +35,7 @@ button {
   margin-top: 200px;
 }
 /* landing */
+
 
 /* pill description page */
 .pilldescription-container {
@@ -43,12 +47,20 @@ button {
 .pill-title {
   font-size: 30px;
   margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 .medication-names {
   font-size: 20px;
+  margin-bottom: 0px;
 }
 
+.medication-description {
+  margin-top: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+
+}
 /* pill description page */
 
 
@@ -70,14 +82,45 @@ button {
 
 .mife-instruction {
   margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .time {
-  font-size: 25px;
+  font-size: 20px;
 }
 /* mife page */
 
 
+
+/* instructions page */
 .instructions-container {
   text-align: center;
+  margin: auto;
+  width: 380px;
 }
+
+.other-steps {
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.step-title {
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.step-description {
+  margin-top: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+
+}
+
+.continue-break {
+  margin-bottom: 80px;
+}
+/* instructions page */

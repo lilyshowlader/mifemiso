@@ -14,7 +14,7 @@ function Instructions () {
     newDate.setMonth(date.getMonth());
     newDate.setDate(date.getDate());
     newDate.setHours(date.getHours());
-    newDate.setMinutes(date.getMinutes() - 30);
+    newDate.setMinutes(date.getMinutes() + 30);
     return newDate;
   }
 
@@ -23,8 +23,8 @@ function Instructions () {
     newDate.setFullYear(date.getFullYear());
     newDate.setMonth(date.getMonth());
     newDate.setDate(date.getDate());
-    newDate.setHours(date.getHours());
-    newDate.setMinutes(date.getMinutes() + 30);
+    newDate.setHours(date.getHours() + 1);
+    newDate.setMinutes(date.getMinutes());
     return newDate;
   }
 
@@ -38,7 +38,8 @@ function Instructions () {
   return (
     <>
     <div className='instructions-container'>
-    <p>when do you plan on taking the misoprostol? remember, this date and time has to be within the range that was given to you.
+    <p className='other-steps'>step two, three, four and five.</p>
+    <p>when do you plan on taking the next set of pills?</p> <p>remember, this date and time has to be within the range that was given to you, which is 6-72 hours after taking mifepristone. the misoprostol medication causes bleeding and cramping, so we suggest that you choose a time when you have no other obligations for the day. </p> <p> please select the date and time below when you will be taking the next set of pills.
     </p>
     <DatePicker
         selected={selectedMisoDate}
@@ -46,8 +47,10 @@ function Instructions () {
         showTimeSelect
         dateFormat="Pp"
     />
-    <p>okay, let's continue</p>
-    <p>step two: based on your input, after having a good meal, take one compazine and one ibuprofen at: 
+    <p className='continue-break'>okay, let's continue.</p>
+    <p className='step-title'>step two</p>
+    <p className='step-description'>based on your input above, after having a good meal, take one compazine (10mg) and one ibuprofen (500mg) at:</p>
+    <p className='time'>
       {startCompazineDate ? startCompazineDate.toLocaleString("en-US", {
         year: "numeric",
         month: "short",
@@ -56,8 +59,9 @@ function Instructions () {
         minute: "numeric",
         hour12: true,
       }) : "please select a date"} </p>
-
-    <p>step three: take the first tablet of percocet at:
+    <p className='step-title'>step three</p>
+    <p className='step-description '>to prevent strong pain, take the first tablet of percocet from your perscription at:</p>
+    <p className='time'>
       {startPercocetDate ? startPercocetDate.toLocaleString("en-US", {
         year: "numeric",
         month: "short",
@@ -65,16 +69,19 @@ function Instructions () {
         hour: "numeric",
         minute: "numeric",
         hour12: true,
-      }) : "please select a date"} to prevent strong pain</p>
-    <p>step four: use the bathroom, wash your hands well</p>
-    <p>step five: take four tablets of misoprostol as discussed with your doctor - either vaginally or buccaly</p>
-    <p>VAGINAL: put on gloves. lie on your back with your knees to your chest and place four tablets of misoprostol 200mg as far up into the vagina as possible. stay lying down for 30 minutes. it's okay if the pills fall out after 30 minutes</p>
-    <p>BUCCAL: place two pills in between your teeth and lower lip on the left. place two more fills between your teeth and your lower lip on the right. suck on some hard candy to help you salivate</p>
-    <p>optional: at the first sign of cramping, take the second tablet of percocet from your prescription to threat pain</p>
+      }) : "please select a date"} </p>
+    <p className='step-title'>step four</p>
+    <p className='step-description '>use the bathroom, wash your hands well.</p>
+    <p className='step-title'>step five</p>
+    <p className='step-description '>take four tablets of misoprostol (200 mcg) as discussed with your doctor - either vaginally or buccaly.</p>
+    <p className='step-description'>VAGINAL: <br></br>put on gloves. lie on your back with your knees to your chest and place four tablets of misoprostol 200mg as far up into the vagina as possible. stay lying down for 30 minutes. it's okay if the pills fall out after 30 minutes</p>
+    <p className='step-description'>BUCCAL: <br></br>place two pills in between your teeth and lower lip on the left. place two more fills between your teeth and your lower lip on the right. suck on some hard candy to help you salivate</p>
+    <p className='step-title'>optional:</p>
+    <p className='step-description'> at the first sign of cramping, take the second tablet of percocet from your prescription to threat pain</p>
     <p></p>
     <Link to="/okaynotokay">
       <button type="button">
-      click here to continue
+      continue
       </button>
     </Link>
     <Link to="/mife">
