@@ -40,7 +40,7 @@ function Mife() {
   return (
     <>
       <div className='mife-container'>
-      <p>step one</p>
+      <p className='mife-step-one'>step one</p>
       <p>what time do you plan on taking mifepristone?</p>
       <p>(the first pill)</p>
       <DatePicker
@@ -49,9 +49,9 @@ function Mife() {
         showTimeSelect
         dateFormat="Pp"
       />
-      <p>based on your input, you may take the misoprostol between:</p>
+      <p className='mife-input'>based on your input,<br></br> you may take the misoprostol between:</p>
 
-      <p> start:{" "}
+      <p className='time'> start:{" "}
         {startDate ? startDate.toLocaleString("en-US", {
         year: "numeric",
         month: "short",
@@ -64,7 +64,7 @@ function Mife() {
 
       <p> and </p>
 
-      <p>
+      <p className='time'>
         end:{" "}
         {endDate ? endDate.toLocaleString("en-US", {
         year: "numeric",
@@ -75,9 +75,9 @@ function Mife() {
         hour12: true,
         }) : "please select a date"}
       </p>
-      <p>one: take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding</p>
+      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p>
       <Link to="/instructions">
-        <button type="button">click here to continue</button>
+        <button type="button">continue</button>
       </Link>
       <Link to="/pilldescription">
         <button type="button">back</button> 

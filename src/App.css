@@ -11,6 +11,7 @@ button {
   background: black;
   color: white;
 }
+
 /* landing */
 .logo {
   font-size: 5.6rem;
@@ -30,16 +31,52 @@ button {
   flex-direction: center;
   margin-top: 200px;
 }
+/* landing */
 
+/* pill description page */
 .pilldescription-container {
   text-align: center;
-
+  margin: auto;
+  width: 380px;
 }
 
+.pill-title {
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+.medication-names {
+  font-size: 20px;
+}
+
+/* pill description page */
+
+
+/* mife page */
 .mife-container {
   text-align: center;
-  
+  margin: auto;
+  width: 380px;
 }
+
+.mife-step-one {
+  font-size: 40px;
+  margin-top: 70px;
+}
+
+.mife-input {
+  margin-top: 70px;
+}
+
+.mife-instruction {
+  margin-top: 60px;
+}
+
+.time {
+  font-size: 25px;
+}
+/* mife page */
+
 
 .instructions-container {
   text-align: center;
