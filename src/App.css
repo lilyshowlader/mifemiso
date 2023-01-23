@@ -15,6 +15,11 @@ button {
   color: white;
   border-color: #2a9d8f;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+}
+
+.buttoncontainer {
+  display: flex
 }
 
 .landingbutton {
@@ -157,3 +162,4 @@ button {
   font-family: 'Open Sans', sans-serif;
 }
 /* expectations page */
+

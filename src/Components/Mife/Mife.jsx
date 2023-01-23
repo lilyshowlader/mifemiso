@@ -78,13 +78,20 @@ function Mife() {
         }) : "please select a date"}
       </p>
       <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p> 
+
+      <div className='button container'>
+      <div className='button-one'>
       <Link to="/instructions">
         <button type="button">continue</button>
       </Link>
+      </div>
+      <div className='button-two'>
       <Link to="/pilldescription">
         <button type="button">back</button> 
         </Link>
       </div> 
+      </div>
+      </div>
     </>
   );
 }

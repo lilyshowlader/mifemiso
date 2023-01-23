@@ -79,17 +79,24 @@ function Instructions () {
     <p className='step-title'>optional:</p>
     <p className='step-description'> at the first sign of cramping, take the second tablet of percocet from your prescription to threat pain</p>
     <p></p>
+
+    <div className='button container'></div>
+    <div className='button-one'>
     <Link to="/okaynotokay">
       <button type="button">
       continue
       </button>
     </Link>
+    </div>
+    <div className='button-two'>
     <Link to="/mife">
       <button type="button">
       back
       </button>
     </Link>
     </div>
+    </div>
+
   </>
   )
 }
