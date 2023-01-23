@@ -190,6 +190,12 @@ button {
     width: 380px;
   }
 
+  .instructions-container {
+    text-align: center;
+    margin: auto;
+    width: 380px;
+  }
+
   .expectations-container {
     text-align: center;
     margin: auto;
