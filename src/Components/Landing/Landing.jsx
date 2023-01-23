@@ -6,7 +6,7 @@ function Landing () {
     <>
     <div className='landing-container'>
     <div className='logo'>mifemiso</div>
-    <div className="animate__animated animate__slideInDown">we'll walk you through.</div>
+    <div className="animate__animated animate__fadeInDown">we'll walk you through.</div>
     <Link to="/pilldescription">
       <button type="button" className='landingbutton'>
       click 
