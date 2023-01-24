@@ -40,6 +40,7 @@ button {
 /* landing */
 .logo {
   font-size: 5.6rem;
+  margin-top: 200px;
   margin-bottom: 15px;
 }
 
@@ -54,7 +55,8 @@ button {
 .landing-container {
   text-align: center;
   flex-direction: center;
-  margin-top: 200px;
+  margin: auto;
+  width: 480px;
 }
 /* landing */
 

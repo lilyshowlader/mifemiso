@@ -6,12 +6,14 @@ import PillDescription from './Components/Pill Description/PillDescription';
 import Mife from './Components/Mife/Mife';
 import Instructions from './Components/Instructions/Instructions'
 import OkayNotOkay from './Components/OkayNotOkay/OkayNotOkay';
+import Disclaimer from './Components/Disclaimer/Disclaimer';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-      <Route path='/' element={<Landing />} />
+      <Route path='/' element={<Disclaimer />} />
+      <Route path='/mifemiso' element={<Landing />} />
       <Route path='/pilldescription' element={<PillDescription />} />
       <Route path='/mife' element={<Mife />} />
       <Route path='/instructions' element={<Instructions />} />
