@@ -5,7 +5,7 @@ function OkayNotOkay () {
     <>
     <div className='expectations-container'>
     <p className='expectations-title'>what's normal?</p>
-    <p className='description'>cramping and bleeding usually begin 1-4 hours after taking misoprostol. sometimes it can even take up to 24 hours. usualy cramping begins before bleeding. please use the heating pad that was given to you, this can help with the cramping. </p>
+    <p className='description'>cramping and bleeding usually begin 1-4 hours after taking misoprostol. sometimes it can even take up to 24 hours. usually cramping begins before bleeding. please use the heating pad that was given to you, this can help with the cramping. </p>
     <p className='description'>it's common to feel all kinds of emotions as you go through this process. allow yourself to feel the emotions. the hormones are powerful! it's totally okay to feel the full range of emotions and feel that they are conflicting with eachother. anxiety is common and it is normal to feel anxiety when you do not know what to expect. please call our helpline if you are concerned and need some reassurance.</p>
 
     <p className='expectations-title'>when to call the doctor</p>
