@@ -14,7 +14,9 @@ While studying for a dev job, I’ve been working per diem at a women’s health
 
 Well, here it is. Mifemiso calculates the times that the different medications should be taken depending on the user calendar input. The app uses the protocol used by the practice I work for.
 
-![IMG_7562](https://user-images.githubusercontent.com/111258832/214195742-5211f77f-ecb7-461a-b2bd-736229aed1ea.jpeg)
+### mobile view:
+![IMG_7562 (1)](https://user-images.githubusercontent.com/111258832/214196095-e37eb3b8-342a-4d3e-b4a8-3df7f190459c.jpeg)
+
 
 
 #### Resources used:
