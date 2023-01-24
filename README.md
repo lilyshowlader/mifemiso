@@ -1,71 +1,25 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # mifemiso
+
+
+
+### disclaimer:
+this app was created as a personal project to demonstrate the concept of a women's health app that simplifies the abortion medication process. this app does not replace consultation with a doctor.
+
+### hi everyone. welcome to mifemiso!
+### 
+
+This project of mine holds a special place in my heart. Prior to shifting over to engineering, I’ve worked in women’s health since I was 16 years old. Access to safe abortions for women has always been a passion of mine and while I decided to undertake a new journey, that passion has never changed. 
+
+While studying for a dev job, I’ve been working per diem at a women’s health center I used to work for back when I was in college. While walking through counseling and aftercare with a patient who was going to get a medical abortion, I realized how a patient can quickly get confused on how the process works, simply due to the number of pills involved and the specific timings for taking them. I typically talk my patients through the process and have them repeat it back to me, but a little part of me wished for some sort of calculator that a patient could use when they went home. 
+
+Well, here it is. Mifemiso calculates the times that the different medications should be taken depending on the user calendar input. The app uses the protocol used by the practice I work for.
+
+![IMG_7562](https://user-images.githubusercontent.com/111258832/214195742-5211f77f-ecb7-461a-b2bd-736229aed1ea.jpeg)
+
+
+#### Resources used:
+React.js
+CSS
+react-date-picker
+animate.css
+Whimsical
