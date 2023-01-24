@@ -12,7 +12,7 @@ input {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* button */
+/* buttons */
 button {
   border-radius: 50%;
   padding: 20px;
@@ -52,19 +52,17 @@ button {
 }
 
 .landing-container {
-  /* height: 100%; */
   text-align: center;
   flex-direction: center;
   margin-top: 200px;
 }
 /* landing */
 
-
 /* pill description page */
 .pilldescription-container {
   text-align: center;
   margin: auto;
-  width: 500px;
+  width: 480px;
 }
 
 .pill-title {
@@ -82,16 +80,14 @@ button {
   margin-top: 3px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-
 }
 /* pill description page */
-
 
 /* mife page */
 .mife-container {
   text-align: center;
   margin: auto;
-  width: 500px;
+  width: 480px;
 }
 
 .mife-step-one {
@@ -106,28 +102,24 @@ button {
 .mife-instruction {
   margin-top: 60px;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 .time {
   font-size: 20px;
-
 }
 /* mife page */
-
-
 
 /* instructions page */
 .instructions-container {
   text-align: center;
   margin: auto;
-  width: 500px;
+  width: 480px;
 }
 
 .other-steps {
   font-size: 40px;
   margin-top: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .step-title {
@@ -141,15 +133,14 @@ button {
   margin-top: 3px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-
 }
 
 .continue-break {
+  margin-top: 80px;
   margin-bottom: 80px;
+  font-size: 25px; 
 }
 /* instructions page */
-
-
 
 /* expectations page */
 .expectations-container {
@@ -170,7 +161,6 @@ button {
 
 
 @media only screen and (max-width: 768px) {
-
   .landing-container {
     /* height: 100%; */
     text-align: center;
@@ -201,5 +191,4 @@ button {
     margin: auto;
     width: 380px;
   }
-
 }
