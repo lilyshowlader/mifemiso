@@ -142,6 +142,8 @@ button {
   margin-bottom: 80px;
   font-size: 25px; 
 }
+
+
 /* instructions page */
 
 /* expectations page */
@@ -164,7 +166,6 @@ button {
 
 @media only screen and (max-width: 768px) {
   .landing-container {
-    /* height: 100%; */
     text-align: center;
     flex-direction: center;
     margin-top: 200px;

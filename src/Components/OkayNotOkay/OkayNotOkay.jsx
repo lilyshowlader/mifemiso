@@ -9,7 +9,7 @@ function OkayNotOkay () {
     <p className='description'>it's common to feel all kinds of emotions as you go through this process. allow yourself to feel the emotions. the hormones are powerful! it's totally okay to feel the full range of emotions and feel that they are conflicting with eachother. anxiety is common and it is normal to feel anxiety when you do not know what to expect. please call our helpline if you are concerned and need some reassurance.</p>
 
     <p className='expectations-title'>when to call the doctor</p>
-    <p className='description'>if you do not bleed within 24 hours, please call the doctor. the doctor will likely instruct you to repeat a 2nd round of misoprostol, 24 hours after the first dose</p>
+    <p className='description'><b>if you do not bleed within 24 hours, please call the doctor. the doctor will likely instruct you to repeat a 2nd round of misoprostol, 24 hours after the first dose.</b></p>
     <ul className='description'>other reasons to call the doctor:
     <li className='description'>fever of 100.4 or higher</li>
     <li className='description'>sudden severe one-sided (left or right) lower abdominal pain</li>
