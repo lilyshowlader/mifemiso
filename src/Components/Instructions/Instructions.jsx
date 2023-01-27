@@ -79,7 +79,7 @@ function Instructions () {
     <p className='step-description'>VAGINAL: <br></br>put on gloves. lie on your back with your knees to your chest and place four tablets of misoprostol 200mg as far up into the vagina as possible. stay lying down for 30 minutes. it's okay if the pills fall out after 30 minutes</p>
     <p className='step-description'>BUCCAL: <br></br>place two pills in between your teeth and lower lip on the left. place two more fills between your teeth and your lower lip on the right. suck on some hard candy to help you salivate</p>
     <p className='step-title'>optional:</p>
-    <p className='step-description'> at the first sign of cramping, take the second tablet of percocet from your prescription to threat pain</p>
+    <p className='step-description'> at the first sign of cramping, take the second tablet of percocet from your prescription to treat pain.</p>
     <p></p>
 
     <div className='button container'></div>
