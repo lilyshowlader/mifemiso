@@ -11,16 +11,16 @@ function OkayNotOkay () {
     <p className='expectations-title'>when to call the doctor</p>
     <p className='description'><b>if you do not bleed within 24 hours, please call the doctor. the doctor will likely instruct you to repeat a 2nd round of misoprostol, 24 hours after the first dose.</b></p>
     <ul className='description'>other reasons to call the doctor:
-    <li className='description'>fever of 100.4 or higher</li>
-    <li className='description'>sudden severe one-sided (left or right) lower abdominal pain</li>
+    <li className='description'>fever of 100.4 or higher.</li>
+    <li className='description'>sudden severe one-sided (left or right) lower abdominal pain.</li>
     <li className='description'>heavy bleeding (soaking through two thick sanitary pads per hour for two hours in a row)</li>
-    <li className='description'>feeling weakness, nausea, vomitting, diarrhea > 24 hours after misoprostol </li>
+    <li className='description'>feeling weakness, nausea, vomitting, diarrhea > 24 hours after misoprostol. </li>
     </ul>
 
     <p className='expectations-title'>follow up</p>
     <ul>
-    <li className='description'>use sanitary pads, not tampons, for 48 hours, then change tampons frequently</li>
-    <li className='description'>if you plan on having sex, please use condoms for 7 days</li>
+    <li className='description'>use sanitary pads, not tampons, for 48 hours, then change tampons frequently.</li>
+    <li className='description'>if you plan on having sex, please use condoms for 7 days.</li>
     <li className='description'>call the doctor if you do not bleed within 24 hours of taking misoprostol.</li>
     <li className='description'>you must go to your follow-up appointment that was scheduled for you. during this appointment, the doctor will do a follow-up ultrasound to make sure everything went okay!</li>
     </ul>
