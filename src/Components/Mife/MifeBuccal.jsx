@@ -14,7 +14,7 @@ function Mife() {
     newDate.setFullYear(date.getFullYear());
     newDate.setMonth(date.getMonth());
     newDate.setDate(date.getDate());
-    newDate.setHours(date.getHours() + 6);
+    newDate.setHours(date.getHours() + 24);
     newDate.setMinutes(date.getMinutes());
     return newDate;
   }
@@ -42,7 +42,7 @@ function Mife() {
     <>
       <div className='mife-container'>
       <p className='mife-step-one'>step one</p>
-      <p className='route'>vaginal route</p>
+      <p className='route'>buccal route</p>
       <p>what time do you plan on taking mifepristone?</p>
       <p>(the first pill)</p>
       <DatePicker
@@ -85,7 +85,7 @@ function Mife() {
   
       <div className='button container'>
       <div className='button-one'>
-      <Link to="/instructions">
+      <Link to="/buccalinstructions">
         <button type="button">continue</button>
       </Link>
       </div>
