@@ -71,7 +71,6 @@ button {
   max-width: 480px;
   height: 100vh;
 }
-
 /* miso options */
 
 /* pill description page */
@@ -83,7 +82,7 @@ button {
 
 .pill-title {
   font-size: 30px;
-  margin-top: 70px;
+  /* margin-top: 70px; */
   margin-bottom: 60px;
   background-color: #fce9f4; 
   padding: 30px; 
@@ -108,6 +107,7 @@ button {
   font-size: 30px;
   margin-bottom: 5px;
 }
+
 .buttons-container {
   display: flex;
   gap: 16px; 
@@ -124,7 +124,6 @@ button {
 
 .mife-step-one {
   font-size: 40px;
-  margin-top: 70px;
   margin-bottom: 5px;
   
 }
@@ -145,6 +144,7 @@ button {
 .suggestion {
   font-family: 'Open Sans', sans-serif;
 }
+
 .time {
   font-size: 20px;
 }
@@ -164,7 +164,6 @@ button {
 
 .other-steps {
   font-size: 40px;
-  margin-top: 70px;
   margin-bottom: 60px;
   background-color: #fce9f4; 
   padding: 30px; 
