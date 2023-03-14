@@ -92,6 +92,8 @@ button {
 .medication-names {
   font-size: 20px;
   margin-bottom: 0px;
+  background-color: #f8f1f5; 
+  padding: 5px;
 }
 
 .medication-description {
