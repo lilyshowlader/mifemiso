@@ -41,8 +41,10 @@ function Mife() {
   return (
     <>
       <div className='mife-container'>
+      <div className='title-container'>
       <p className='mife-step-one'>step one</p>
       <p className='route'>buccal route</p>
+      </div>
       <p>what time do you plan on taking mifepristone?</p>
       <p>(the first pill)</p>
       <DatePicker

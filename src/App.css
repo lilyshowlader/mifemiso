@@ -124,6 +124,11 @@ button {
   font-size: 40px;
   margin-top: 70px;
   margin-bottom: 5px;
+  
+}
+
+.title-container {
+  background-color: #fce9f4; 
 }
 
 .mife-input {
@@ -159,6 +164,8 @@ button {
   font-size: 40px;
   margin-top: 70px;
   margin-bottom: 60px;
+  background-color: #fce9f4; 
+  padding: 30px; 
 }
 
 .step-title {
