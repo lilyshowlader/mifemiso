@@ -173,6 +173,8 @@ button {
   margin-bottom: 0px;
   margin-top: 50px;
   text-decoration: underline;
+  background-color: #f8f1f5; 
+  padding: 5px;
 }
 
 .step-description {
