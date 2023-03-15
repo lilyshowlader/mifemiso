@@ -40,7 +40,7 @@ function Instructions () {
     <div className='instructions-container'>
     <p className='other-steps'>step two, three, four and five.</p>
     <p>when do you plan on taking the next set of pills?</p> 
-    <p className='warning'>remember, this date and time has to be within the range that was given to you, which is 6-72 hours after taking mifepristone. the misoprostol medication causes bleeding and cramping, so we suggest that you choose a time when you have no other obligations for the day.</p> 
+    <p className='warning'>remember, this date and time has to be within the range that was given to you, which is 24-72 hours after taking mifepristone. the misoprostol medication causes bleeding and cramping, so we suggest that you choose a time when you have no other obligations for the day.</p> 
     <p> please select the date and time below when you will be taking the next set of pills.
     </p>
     <DatePicker
