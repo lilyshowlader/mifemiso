@@ -11,7 +11,7 @@ import Disclaimer from './Components/Disclaimer/Disclaimer';
 import MisoOptions from './Components/MisoOptions/MisoOptions';
 import MifeBuccal from './Components/Mife/MifeBuccal';
 import InstructionsBuccal from './Components/Instructions/InstructionsBuccal'
-import { MifoDateProvider } from './utils/useMifoDate';
+import { MifeDateProvider } from './utils/useMifeDate';
 
 function App() {
   const [date, setDate] = useState((() => {
@@ -24,7 +24,7 @@ function App() {
   })());
 
   return (
-    <MifoDateProvider value={{ date, setDate }}>
+    <MifeDateProvider value={{ date, setDate }}>
       <Routes>
         <Route path='/' element={<Disclaimer />} />
         <Route path='/mifemiso' element={<Landing />} />
@@ -36,7 +36,7 @@ function App() {
         <Route path='/buccalinstructions' element={<InstructionsBuccal />} />
         <Route path='/okaynotokay' element={<OkayNotOkay />} />
       </Routes>
-    </MifoDateProvider>
+    </MifeDateProvider>
   );
 }
 
