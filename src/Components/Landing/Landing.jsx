@@ -1,17 +1,9 @@
-import { useState } from "react";
 import { Navigate } from "react-router-dom"
-import 'animate.css';
+import 'animate.css'
+import useAnimateOut from "../../utils/useAnimateOut"
 
 function Landing () {
-  const [moveToNext, setMoveToNext] = useState(false);
-
-  const animateOut = () => {
-    document.querySelectorAll(".animateOut").forEach(el => {
-      el.className = el.className.split(" ").filter(name => !name.includes("In") && !name.includes("delay-")).concat("animate").join(" animate__fadeOut")
-    });
-
-    setTimeout(() => setMoveToNext(true), 2000);
-  }
+  const [moveToNext, animateOut] = useAnimateOut();
 
   if(moveToNext) {
     return <Navigate to="/pilldescription" />
@@ -19,13 +11,13 @@ function Landing () {
 
   return (
     <>
-    <div className='landing-container'>
+    <div className='container landing-container animateOut'>
     <div className='logo'>mifemiso</div>
-    <div className="animate__animated animate__fadeInDown animateOut">we'll walk you through.</div>
-    <button onClick={animateOut} type="button" className='landingbutton animate__animated animate__fadeIn animate__delay-1s animateOut'>
+    <div className="animate__animated animate__fadeInDown">we'll walk you through.</div>
+    <button onClick={animateOut} type="button" className='landingbutton animate__animated animate__fadeIn animate__delay-1s'>
     show me
     </button>
-    <p className='disclaimer animate__animated animate__fadeIn animate__delay-1s animateOut'>please consult with your <br></br>doctor before using this site.</p>
+    <p className='disclaimer animate__animated animate__fadeIn animate__delay-1s'>please consult with your <br></br>doctor before using this site.</p>
     </div>
     </>
   )

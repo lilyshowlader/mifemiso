@@ -15,7 +15,7 @@ function OkayNotOkay () {
     <li className='description'>fever of 100.4 or higher.</li>
     <li className='description'>sudden severe one-sided (left or right) lower abdominal pain.</li>
     <li className='description'>heavy bleeding (soaking through two thick sanitary pads per hour for two hours in a row)</li>
-    <li className='description'>feeling weakness, nausea, vomitting, diarrhea > 24 hours after misoprostol. </li>
+    <li className='description'>feeling weakness, nausea, vomitting, diarrhea {'>'} 24 hours after misoprostol. </li>
     </ul>
 
     <p className='expectations-title'>follow up</p>
