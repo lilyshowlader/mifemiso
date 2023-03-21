@@ -1,46 +1,25 @@
-import React, { useState } from "react";
+import React, { useMemo } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
+import { addTime, useMifeDate } from "../../utils/useMifeDate";
 
 function Mife() {
-  const [selectedDate, setSelectedDate] = useState(new Date());
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
-
-  // function to add 8 hours to the selectedDate
-  function calculateStartDate(date) {
-    const newDate = new Date(date);
-    newDate.setFullYear(date.getFullYear());
-    newDate.setMonth(date.getMonth());
-    newDate.setDate(date.getDate());
-    newDate.setHours(date.getHours() + 6);
-    newDate.setMinutes(date.getMinutes());
-    return newDate;
-  }
-
-  // function to add 24 hours to the selectedDate
-  function calculateEndDate(date) {
-    const newDate = new Date(date);
-    newDate.setFullYear(date.getFullYear());
-    newDate.setMonth(date.getMonth());
-    newDate.setDate(date.getDate());
-    newDate.setHours(date.getHours() + 72);
-    newDate.setMinutes(date.getMinutes());
-    return newDate;
-  }
+  const { date, setDate } = useMifeDate();
+  const { startDate, endDate } = useMemo(() => ({
+    startDate: addTime(date, 6, "hours"),
+    endDate: addTime(date, 72, "hours")
+  }), [date]);
 
   // onChange event handler for the datepicker
   const handleDateChange = (date) => {
-    setSelectedDate(date);
-    setStartDate(calculateStartDate(date));
-    setEndDate(calculateEndDate(date));
+    setDate(date);
   };
 
-  console.log(selectedDate)
+  console.log(date)
   return (
-    <>
-      <div className='mife-container'>
+    <div style={{ paddingBottom: 30 }}>
+      <div className='container'>
       <div className='title-container'>
       <p className='mife-step-one'>step one</p>
       <p className='route'>vaginal route</p>
@@ -48,18 +27,18 @@ function Mife() {
       <p>what time do you plan on taking mifepristone?</p>
       <p>(the first pill)</p>
       <DatePicker
-        selected={selectedDate}
+        selected={date}
         onChange={handleDateChange}
         showTimeSelect
         dateFormat="Pp"
       />
-    
+
 
       <p className='suggestion'>when you take mifepristone, you can take the next set of pills anytime between 6-72 hours later. we suggest that you plan to take the next set of pills at a time when you have no other obligations and can relax.</p>
-    
+
       <p className='mife-input'>based on your input,<br></br> you may take the next set of pills between:</p>
-      
-      <p className='time'> start:{" "}
+
+      <p className='time'> <span style={{ fontWeight: "bolder" }}>start</span>:{" "}
         {startDate ? startDate.toLocaleString("en-US", {
         year: "numeric",
         month: "short",
@@ -73,7 +52,7 @@ function Mife() {
       <p> and </p>
 
       <p className='time'>
-        end:{" "}
+      <span style={{ fontWeight: "bolder" }}>end</span>:{" "}
         {endDate ? endDate.toLocaleString("en-US", {
         year: "numeric",
         month: "short",
@@ -83,22 +62,18 @@ function Mife() {
         hour12: true,
         }) : "please select a date"}
       </p>
-      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p> 
-  
-      <div className='button container'>
-      <div className='button-one'>
-      <Link to="/instructions">
-        <button type="button">continue</button>
-      </Link>
-      </div>
-      <div className='button-two'>
-      <Link to="/pilldescription">
-        <button type="button">back</button> 
+      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p>
+
+      <div className='buttons-container'>
+        <Link to="/pilldescription">
+          <button type="button">back</button>
         </Link>
-      </div> 
+        <Link to="/instructions">
+          <button type="button">continue</button>
+        </Link>
       </div>
       </div>
-    </>
+    </div>
   );
 }
 

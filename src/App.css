@@ -47,10 +47,6 @@ button:active {
   max-width: 480px;
 }
 
-.buttoncontainer {
-  display: flex
-}
-
 .landingbutton {
   border-radius: 50%;
   padding: 20px;
@@ -94,6 +90,22 @@ button:active {
 /* miso options */
 
 /* pill description page */
+.pill-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  padding: 0 5px;
+  text-align: center;
+  max-width: 1400px;
+}
+
+.pill-layout {
+  max-width: 480px;
+  margin: 10px;
+}
+
 .pill-title {
   font-size: 30px;
   /* margin-top: 70px; */
@@ -130,11 +142,6 @@ button:active {
 /* miso options page */
 
 /* mife page */
-.mife-container {
-  text-align: center;
-  margin: auto;
-  width: 480px;
-}
 
 .mife-step-one {
   font-size: 40px;
@@ -242,6 +249,15 @@ button:active {
   }
 
   .container {
+    max-width: 380px;
+  }
+
+  .pill-container {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .pill-layout {
     max-width: 380px;
   }
 }

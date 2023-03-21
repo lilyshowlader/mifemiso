@@ -32,8 +32,8 @@ const medications = [
 ]
 
 const Medication = ({ title, description, imgUrl, index, imgWidth }) => (
-  <div className={`animate__animated animate__fadeIn animate__delay-${index > 4 ? 4 : index+1}s`}>
-    <img src={imgUrl} alt={title} width={imgWidth} />
+  <div className={`pill-layout animate__animated animate__fadeIn animate__delay-${index > 4 ? 4 : index+1}s`}>
+    <img src={imgUrl} alt={title} height={200} width={300} />
     <p className="medication-names">{title.toLowerCase()}</p>
     <p className="medication-description">
       {description.toLowerCase()}
@@ -48,19 +48,21 @@ function PillDescription () {
       document.querySelector(":root").style.setProperty("--animate-delay", "1s")
     }
   }, []);
-  return (
-    <div className='container animate__animated animate__fadeIn' style={{ paddingBottom: 30 }}>
+  return (<>
+    <div className="container animate__animated animate__fadeIn">
       <p className='pill-title'>here is a list of all the medications<br></br> that were given to you.</p>
-      <>
-        { medications.map((med, i) => <Medication key={med.title} {...med} index={i} />) }
-      </>
+    </div>
+    <div className="pill-container">
+      { medications.map((med, i) => <Medication key={med.title} index={i} {...med} />) }
+    </div>
+    <div style={{ paddingBottom: 30, textAlign: "center" }}>
       <Link to="/misooptions">
         <button type="button">
-        continue
+          continue
         </button>
       </Link>
     </div>
-  )
+  </>)
 }
 
 export default PillDescription

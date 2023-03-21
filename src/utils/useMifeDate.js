@@ -1,6 +1,6 @@
 import { useContext, createContext } from "react";
 
-const MifoDateContext = createContext({
+const MifeDateContext = createContext({
   date: new Date(),
   setDate: () => {}
 });
@@ -28,5 +28,7 @@ export const addTime = (date, time, type) => {
   return newDate;
 }
 
-export const MifoDateProvider = MifoDateContext.Provider;
-export const useMifoDate = () => useContext(MifoDateContext);
+export const calcTodayMidnight = () => new Date(1000 * 60 * 60 * 24 * Math.floor(Date.now() / (1000 * 60 * 60 * 24)));
+
+export const MifeDateProvider = MifeDateContext.Provider;
+export const useMifeDate = () => useContext(MifeDateContext);

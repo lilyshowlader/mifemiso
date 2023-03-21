@@ -11,17 +11,10 @@ import Disclaimer from './Components/Disclaimer/Disclaimer';
 import MisoOptions from './Components/MisoOptions/MisoOptions';
 import MifeBuccal from './Components/Mife/MifeBuccal';
 import InstructionsBuccal from './Components/Instructions/InstructionsBuccal'
-import { MifeDateProvider } from './utils/useMifeDate';
+import { calcTodayMidnight, MifeDateProvider } from './utils/useMifeDate';
 
 function App() {
-  const [date, setDate] = useState((() => {
-    const date = new Date();
-    date.setMilliseconds(0);
-    date.setMinutes(0);
-    date.setSeconds(0);
-    date.setHours(0);
-    return date;
-  })());
+  const [date, setDate] = useState(calcTodayMidnight());
 
   return (
     <MifeDateProvider value={{ date, setDate }}>
