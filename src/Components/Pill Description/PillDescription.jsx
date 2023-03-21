@@ -3,7 +3,7 @@ function PillDescription () {
   return (
     <>
     <div className='pilldescription-container'>
-    <p className='pill-title'>here is a list of all the medications<br></br> that were given to you.</p> 
+    <p className='pill-title'>here is a list of all the medications<br></br> that were given to you.</p>
     <img src="https://i.imgur.com/TOSVkTZ.png" alt='mifepristone'></img>
     <p className='medication-names'>mifepristone</p>
     <p className='medication-description'>mifepristone is the first pill you will take during this process. mifepristone works by stopping the supply of hormones that maintains the interior of the uterus. without these hormones, the uterus cannot support the pregnancy and the contents of the uterus are expelled.</p>

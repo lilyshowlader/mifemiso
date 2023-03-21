@@ -13,8 +13,7 @@ import InstructionsBuccal from './Components/Instructions/InstructionsBuccal'
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
+    <Routes>
       <Route path='/' element={<Disclaimer />} />
       <Route path='/mifemiso' element={<Landing />} />
       <Route path='/pilldescription' element={<PillDescription />} />
@@ -24,9 +23,7 @@ function App() {
       <Route path='/instructions' element={<Instructions />} />
       <Route path='/buccalinstructions' element={<InstructionsBuccal />} />
       <Route path='/okaynotokay' element={<OkayNotOkay />} />
-      </Routes>
-
-    </div>
+    </Routes>
   );
 }
 
