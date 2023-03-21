@@ -18,8 +18,7 @@ function Mife() {
 
   console.log(date)
   return (
-    <div style={{ paddingBottom: 30 }}>
-      <div className='container'>
+    <div className='container'>
       <div className='title-container'>
       <p className='mife-step-one'>step one</p>
       <p className='route'>vaginal route</p>
@@ -71,7 +70,6 @@ function Mife() {
         <Link to="/instructions">
           <button type="button">continue</button>
         </Link>
-      </div>
       </div>
     </div>
   );

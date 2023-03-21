@@ -26,12 +26,19 @@ function OkayNotOkay () {
     <li className='description'>you must go to your follow-up appointment that was scheduled for you. during this appointment, the doctor will do a follow-up ultrasound to make sure everything went okay!</li>
     </ul>
 
-    
-    <Link to="/instructions">
-      <button type="button">
-      back
-      </button>
-    </Link>
+    <div className="buttons-container" style={{ paddingBottom: 30 }}>
+      <Link to="/instructions">
+        <button type="button">
+        back
+        </button>
+      </Link>
+      <Link to="/">
+        <button className="start-over" type="button">
+        start over
+        </button>
+      </Link>
+    </div>
+
     </div>
     </>
   )

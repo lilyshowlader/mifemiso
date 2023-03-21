@@ -4,6 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 
 function Mife() {
+  // TODO: update this to use react context
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
@@ -39,8 +40,7 @@ function Mife() {
 
   console.log(selectedDate)
   return (
-    <>
-      <div className='mife-container'>
+    <div className='container'>
       <div className='title-container'>
       <p className='mife-step-one'>step one</p>
       <p className='route'>buccal route</p>
@@ -53,12 +53,12 @@ function Mife() {
         showTimeSelect
         dateFormat="Pp"
       />
-    
+
 
       <p className='suggestion'>when you take mifepristone, you can take the next set of pills anytime between 24-72 hours later. we suggest that you plan to take the next set of pills at a time when you have no other obligations and can relax.</p>
-    
+
       <p className='mife-input'>based on your input,<br></br> you may take the next set of pills between:</p>
-      
+
       <p className='time'> start:{" "}
         {startDate ? startDate.toLocaleString("en-US", {
         year: "numeric",
@@ -83,22 +83,17 @@ function Mife() {
         hour12: true,
         }) : "please select a date"}
       </p>
-      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p> 
-  
-      <div className='button container'>
-      <div className='button-one'>
-      <Link to="/buccalinstructions">
-        <button type="button">continue</button>
-      </Link>
-      </div>
-      <div className='button-two'>
-      <Link to="/pilldescription">
-        <button type="button">back</button> 
+      <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p>
+
+      <div className='buttons-container'>
+        <Link to="/buccalinstructions">
+          <button type="button">continue</button>
         </Link>
-      </div> 
+        <Link to="/pilldescription">
+          <button type="button">back</button>
+        </Link>
       </div>
-      </div>
-    </>
+    </div>
   );
 }
 
