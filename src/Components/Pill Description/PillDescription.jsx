@@ -48,19 +48,21 @@ function PillDescription () {
       document.querySelector(":root").style.setProperty("--animate-delay", "1s")
     }
   }, []);
-  return (
-    <div className='container animate__animated animate__fadeIn' style={{ paddingBottom: 30 }}>
+  return (<>
+    <div className="container animate__animated animate__fadeIn">
       <p className='pill-title'>here is a list of all the medications<br></br> that were given to you.</p>
-      <>
-        { medications.map((med, i) => <Medication key={med.title} {...med} index={i} />) }
-      </>
-      <Link to="/misooptions">
-        <button type="button">
-        continue
-        </button>
-      </Link>
     </div>
-  )
+    <div className='' style={{ paddingBottom: 30 }}>
+      <div className="pill-layout">
+        { medications.map((med, i) => <Medication key={med.title} index={i} {...med} />) }
+      </div>
+    </div>
+    <Link to="/misooptions">
+      <button type="button">
+        continue
+      </button>
+    </Link>
+  </>)
 }
 
 export default PillDescription

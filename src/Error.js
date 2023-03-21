@@ -1,10 +1,7 @@
 // taken almost word for word from https://reactrouter.com/en/main/start/tutorial
 // im not proud of it
-import { useRouteError } from "react-router-dom"
-
 const Error = () => {
-  const error = useRouteError();
-  console.error(error);
+  const error = { statusText: "Not found" };
 
   return (
     <div style={{ margin: "150px 20px", textAlign: "center" }}>
