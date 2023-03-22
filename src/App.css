@@ -1,6 +1,11 @@
+:root {
+  --animate-duration: 3000ms;
+}
+
 body {
   font-family: 'Nanum Myeongjo', serif;
   height: 40vmin;
+  margin: 0; /* Why Do We Still Have To Do This In 2023 */
 }
 
 img {
@@ -8,8 +13,14 @@ img {
 }
 
 input {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-family: 'Open Sans', serif;
+  text-align: center;
+  border-radius: 50px 40%;
+  width: calc(100% - 70px);
+  padding: 10px 25px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 /* buttons */
@@ -18,13 +29,33 @@ button {
   padding: 20px;
   background: #2a9d8f;
   color: white;
-  border-color: #2a9d8f;
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
+  border: 2px outset #9ed6d0;
+  min-width: 120px;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
-.buttoncontainer {
-  display: flex
+button:hover {
+  background: #1d6f65;
+}
+
+button:active {
+  background: #155049;
+  border: 2px inset #74a09b;
+}
+
+.start-over {
+  background: #155049;
+  border: 2px inset #0d3c31;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  max-width: 480px;
 }
 
 .landingbutton {
@@ -32,7 +63,6 @@ button {
   padding: 20px;
   background: #2a9d8f;
   color: white;
-  border-color: #2a9d8f;
   font-family: 'Open Sans', sans-serif;
   margin-top: 30px;
 }
@@ -55,43 +85,50 @@ button {
 
 .landing-container {
   text-align: center;
-  flex-direction: center;
-  margin: auto;
-  width: 480px;
+  padding-bottom: 30px;
 }
 /* landing */
 
 /* miso options */
 .miso-options-container {
   text-align: center;
-  margin: 0 auto; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
 }
 /* miso options */
 
 /* pill description page */
-.pilldescription-container {
-  text-align: center;
+.pill-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
   margin: auto;
-  width: 480px;
+  padding: 0 5px;
+  text-align: center;
+  max-width: 1400px;
+}
+
+.pill-layout {
+  max-width: 480px;
+  margin: 10px;
 }
 
 .pill-title {
   font-size: 30px;
   /* margin-top: 70px; */
   margin-bottom: 60px;
-  background-color: #fce9f4; 
-  padding: 30px; 
+  background-color: #fce9f4;
+  padding: 30px;
 }
 
 .medication-names {
   font-size: 20px;
   margin-bottom: 0px;
-  background-color: #f8f1f5; 
+  background-color: #f8f1f5;
   padding: 5px;
 }
 
@@ -110,26 +147,22 @@ button {
 
 .buttons-container {
   display: flex;
-  gap: 16px; 
+  gap: 16px;
   justify-content: center;
+  padding-bottom: 30px;
 }
 /* miso options page */
 
 /* mife page */
-.mife-container {
-  text-align: center;
-  margin: auto;
-  width: 480px;
-}
 
 .mife-step-one {
   font-size: 40px;
   margin-bottom: 5px;
-  
+
 }
 
 .title-container {
-  background-color: #fce9f4; 
+  background-color: #fce9f4;
 }
 
 .mife-input {
@@ -165,8 +198,8 @@ button {
 .other-steps {
   font-size: 40px;
   margin-bottom: 60px;
-  background-color: #fce9f4; 
-  padding: 30px; 
+  background-color: #fce9f4;
+  padding: 30px;
 }
 
 .step-title {
@@ -174,7 +207,7 @@ button {
   margin-bottom: 0px;
   margin-top: 50px;
   text-decoration: underline;
-  background-color: #f8f1f5; 
+  background-color: #f8f1f5;
   padding: 5px;
 }
 
@@ -187,7 +220,7 @@ button {
 .continue-break {
   margin-top: 80px;
   margin-bottom: 80px;
-  font-size: 25px; 
+  font-size: 25px;
 }
 /* instructions page */
 
@@ -195,14 +228,14 @@ button {
 .expectations-container {
   text-align: center;
   margin: auto;
-  width: 500px;
+  max-width: 500px;
 }
 
 .expectations-title {
   font-size: 25px;
   text-decoration: underline;
-  background-color: #fce9f4; 
-  padding: 20px; 
+  background-color: #fce9f4;
+  padding: 20px;
 }
 
 .description {
@@ -211,35 +244,32 @@ button {
 /* expectations page */
 
 
+/* arbitrary breakpoint - around here is where mifemiso logo is too wide for viewport width */
+@media only screen and (max-width: 440px) {
+  .logo {
+    font-size: 20vw;
+    margin-top: 180px;
+    margin-bottom: 12px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .landing-container {
-    text-align: center;
-    flex-direction: center;
     margin-top: 200px;
-    width: 380px;
+    margin: auto;
+    max-width: 380px;
   }
 
-  .pilldescription-container {
-    text-align: center;
-    margin: auto;
-    width: 380px;
+  .container {
+    max-width: 380px;
   }
 
-  .mife-container {
-    text-align: center;
-    margin: auto;
-    width: 380px;
+  .pill-container {
+    flex-flow: column nowrap;
+    align-items: center;
   }
 
-  .instructions-container {
-    text-align: center;
-    margin: auto;
-    width: 380px;
-  }
-
-  .expectations-container {
-    text-align: center;
-    margin: auto;
-    width: 380px;
+  .pill-layout {
+    max-width: 380px;
   }
 }

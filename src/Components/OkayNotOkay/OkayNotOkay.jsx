@@ -15,7 +15,7 @@ function OkayNotOkay () {
     <li className='description'>fever of 100.4 or higher.</li>
     <li className='description'>sudden severe one-sided (left or right) lower abdominal pain.</li>
     <li className='description'>heavy bleeding (soaking through two thick sanitary pads per hour for two hours in a row)</li>
-    <li className='description'>feeling weakness, nausea, vomitting, diarrhea > 24 hours after misoprostol. </li>
+    <li className='description'>feeling weakness, nausea, vomitting, diarrhea {'>'} 24 hours after misoprostol. </li>
     </ul>
 
     <p className='expectations-title'>follow up</p>
@@ -26,12 +26,19 @@ function OkayNotOkay () {
     <li className='description'>you must go to your follow-up appointment that was scheduled for you. during this appointment, the doctor will do a follow-up ultrasound to make sure everything went okay!</li>
     </ul>
 
-    
-    <Link to="/instructions">
-      <button type="button">
-      back
-      </button>
-    </Link>
+    <div className="buttons-container" style={{ paddingBottom: 30 }}>
+      <Link to="/instructions">
+        <button type="button">
+        back
+        </button>
+      </Link>
+      <Link to="/">
+        <button className="start-over" type="button">
+        start over
+        </button>
+      </Link>
+    </div>
+
     </div>
     </>
   )

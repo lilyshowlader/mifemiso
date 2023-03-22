@@ -1,18 +1,23 @@
-import { Link } from "react-router-dom"
-import 'animate.css';
+import { Navigate } from "react-router-dom"
+import 'animate.css'
+import useAnimateOut from "../../utils/useAnimateOut"
 
 function Landing () {
+  const [moveToNext, animateOut] = useAnimateOut();
+
+  if(moveToNext) {
+    return <Navigate to="/pilldescription" />
+  }
+
   return (
     <>
-    <div className='landing-container'>
+    <div className='container landing-container animateOut'>
     <div className='logo'>mifemiso</div>
     <div className="animate__animated animate__fadeInDown">we'll walk you through.</div>
-    <Link to="/pilldescription">
-      <button type="button" className='landingbutton'>
-      click 
-      </button>
-    </Link>
-    <p className='disclaimer'>please consult with your <br></br>doctor before using this site.</p>
+    <button onClick={animateOut} type="button" className='landingbutton animate__animated animate__fadeIn animate__delay-1s'>
+    show me
+    </button>
+    <p className='disclaimer animate__animated animate__fadeIn animate__delay-1s'>please consult with your <br></br>doctor before using this site.</p>
     </div>
     </>
   )
