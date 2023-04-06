@@ -20,8 +20,7 @@ const medications = [
   },
   {
     title: "ibuprofen",
-    // these meds are actually very different!!
-    description: "ibuprofen is generic tylenol. it is used for pain management. we recommend for patients to take this medication as a preventative measure.",
+    description: "ibuprofen is used for pain management. we recommend for patients to take this medication as a preventative measure.",
     imgUrl: "https://i.imgur.com/h83dewV.png"
   },
   {
