@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from "react-router-dom";
 
-function Mife() {
+function MifeBuccal() {
   // TODO: update this to use react context
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [startDate, setStartDate] = useState(null);
@@ -97,4 +97,4 @@ function Mife() {
   );
 }
 
-export default Mife;
+export default MifeBuccal;
