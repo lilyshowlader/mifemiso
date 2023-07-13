@@ -147,9 +147,21 @@ button:active {
 
 .buttons-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
-  justify-content: center;
   padding-bottom: 30px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.fruitpic {
+  height: 200px;
 }
 /* miso options page */
 
