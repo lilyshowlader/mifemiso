@@ -25,6 +25,7 @@ function Mife() {
       <p className='route'>vaginal route</p>
       </div>
       <p>what time do you plan on taking mifepristone?</p>
+      <img src='https://i.imgur.com/TOSVkTZ.png' alt='mife'></img>
       <p>(the first pill)</p>
       <DatePicker
         selected={date}
@@ -65,11 +66,11 @@ function Mife() {
       <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p>
 
       <div className='buttons-container'>
+      <Link to="/instructions">
+          <button type="button">continue</button>
+        </Link>
         <Link to="/pilldescription">
           <button type="button">back</button>
-        </Link>
-        <Link to="/instructions">
-          <button type="button">continue</button>
         </Link>
       </div>
     </div>
