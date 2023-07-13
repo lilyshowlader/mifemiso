@@ -47,6 +47,7 @@ function MifeBuccal() {
       <p className='route'>buccal route</p>
       </div>
       <p>what time do you plan on taking mifepristone?</p>
+      <img src='https://i.imgur.com/TOSVkTZ.png' alt='mife'></img>
       <p>(the first pill)</p>
       <DatePicker
         selected={selectedDate}
