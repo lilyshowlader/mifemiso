@@ -38,6 +38,7 @@ function MifeBuccal() {
     setEndDate(calculateEndDate(date));
   };
 
+
   console.log(selectedDate)
   return (
     <div className='container'>

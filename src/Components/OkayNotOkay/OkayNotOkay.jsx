@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 
-
 function OkayNotOkay () {
+
+
   return (
     <>
     <div className='expectations-container'>

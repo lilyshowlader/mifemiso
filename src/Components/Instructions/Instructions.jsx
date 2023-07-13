@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -34,6 +34,10 @@ function Instructions () {
     setCompazineDate(calculateCompazineDate(date))
     setPercocetDate(calculatePercocetDate(date));
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   return (

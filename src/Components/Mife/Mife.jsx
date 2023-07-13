@@ -17,6 +17,7 @@ function Mife() {
   };
 
   console.log(date)
+
   return (
     <div className='container'>
       <div className='title-container'>
