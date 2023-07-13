@@ -143,6 +143,7 @@ button:active {
 .options-title {
   font-size: 30px;
   margin-bottom: 5px;
+  padding-top: 40px
 }
 
 .buttons-container {
