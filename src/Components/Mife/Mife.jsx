@@ -37,6 +37,7 @@ function Mife() {
 
       <p className='suggestion'>when you take mifepristone, you can take the next set of pills anytime between 6-72 hours later. we suggest that you plan to take the next set of pills at a time when you have no other obligations and can relax.</p>
 
+      <div style={{backgroundColor: '#D3F3E1', paddingTop: '3px', paddingBottom:'9px', borderRadius: '10px'}}>
       <p className='mife-input'>based on your input,<br></br> you may take the next set of pills between:</p>
 
       <p className='time'> <span style={{ fontWeight: "bolder" }}>start</span>:{" "}
@@ -63,6 +64,7 @@ function Mife() {
         hour12: true,
         }) : "please select a date"}
       </p>
+      </div>
       <p className='mife-instruction'>take the mifepristone at a time that is right for you. most women do not feel different after taking it, however, some women do experience some spotting or bleeding.</p>
 
       <div className='buttons-container'>
